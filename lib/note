@@ -1,0 +1,104 @@
+Column(
+          children: [
+            Center(
+              child: Container(
+                color: Colors.orange,
+                height: 200,
+                width: 200,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.grey,
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(30),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.grey.shade900,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20),
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: "6 Vaults ",
+                    icon: Icon(Icons.lock),
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+
+
+
+Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 200),
+            child: Row(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  child: Text("Deposit"),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 4, color: Colors.tealAccent),
+                    color: Colors.teal,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  child: Text("Transfer"),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 4, color: Colors.yellow),
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                Container(
+                  height: 100,
+                  width: 100,
+                  margin: EdgeInsets.all(20),
+                  alignment: Alignment.center,
+                  child: Text("Paybills"),
+                  decoration: BoxDecoration(
+                    border: Border.all(width: 4, color: Colors.orange),
+                    color: Colors.orange,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 250),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey.shade400,
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+          ),
+        ],
+
+
+
+
+
+
+
+
+
+
+
+
+        _______________________________
