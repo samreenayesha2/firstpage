@@ -9,6 +9,8 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  get icon => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,12 +19,12 @@ class _ProfilePageState extends State<ProfilePage> {
         children: [
           Container(
             child: Padding(
-              padding: const EdgeInsets.only(left: 140, top: 110, right: 130),
+              padding: const EdgeInsets.only(left: 120, top: 110, right: 160),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    '462.00 usd',
+                    '\$462.00',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                   ),
                   TextField(
@@ -69,7 +71,7 @@ class _ProfilePageState extends State<ProfilePage> {
               Padding(
                 padding: const EdgeInsets.only(top: 30, left: 30),
                 child: Text(
-                  '6,456.65 usd',
+                  '\$6,456.65 ',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
                 ),
               ),
@@ -81,59 +83,44 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ),
               Positioned(
-                  top: 120,
-                  right: 20,
-                  child: Container(
-                    height: 100,
-                    width: 100,
+                top: 120,
+                right: 20,
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
                     color: Colors.orange,
-                    child: Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          icon: Center(
-                              child: Icon(
-                            Icons.upload,
-                            size: 50,
-                          )),
-                        ),
-                      ),
-                    ),
-                  )),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Icon(Icons.upload, size: 50),
+                ),
+              ),
               Positioned(
-                  top: 120,
-                  left: 20,
-                  child: Container(
-                    height: 100,
-                    width: 100,
+                top: 120,
+                left: 20,
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
                     color: Colors.teal,
-                    child: Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          icon: Center(child: Icon(Icons.download, size: 50)),
-                        ),
-                      ),
-                    ),
-                  )),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Icon(Icons.download, size: 50),
+                ),
+              ),
               Positioned(
-                  top: 120,
-                  left: 140,
-                  child: Container(
-                    height: 100,
-                    width: 100,
+                top: 120,
+                left: 140,
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
                     color: Colors.yellow,
-                    child: Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          border: InputBorder.none,
-                          icon: Center(child: Icon(Icons.transform, size: 50)),
-                        ),
-                      ),
-                    ),
-                  )),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Icon(Icons.transform, size: 50),
+                ),
+              ),
               Column(
                 children: [
                   Container(
